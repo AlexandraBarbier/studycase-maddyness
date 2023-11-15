@@ -1,0 +1,236 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    /* overflow-x: hidden; */
+}
+
+html {
+    font-size: 16px;
+}
+
+body {
+    /* background: #fcf9eb; */
+    background-color: #e1dfdd;
+    color: #000000;
+    font-family: "hoss-sharp", sans-serif;
+}
+
+:root {
+    --sharp: "hoss-sharp", sans-serif;
+    --courier: "courier new", monospace;
+    --serif: "pt serif", serif;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 20px;
+}
+
+h3 {
+    font-weight: 500;
+    font-size: 35px;
+}
+
+p,
+li {
+    line-height: 1.7;
+}
+
+.flex {
+    display: flex;
+    width: 100%;
+    gap: 32px;
+}
+
+.nogap {
+    gap: 3px;
+}
+
+.italic {
+    font-style: italic;
+    font-weight: 400;
+    /* font-size: 1.2rem; */
+}
+
+/* .flex>div {
+    width: 50%;
+} */
+
+.sharp {
+    font-family: var(--sharp);
+}
+
+header {
+    background-color: #111;
+    color: #fff;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+
+.hello {
+    transform: rotate(-5deg);
+    font-size: 2.8rem;
+    margin-bottom: 2.5rem;
+    transform-origin: center;
+    text-align: left;
+}
+
+.scrollingTxt {
+    text-transform: uppercase;
+    padding: 0;
+    margin: 0;
+}
+
+.scrollingTxt span {
+    font-style: italic;
+    font-weight: 300;
+}
+
+section {
+    width: 100vw;
+    height: 100%;
+    text-align: center;
+    padding: 3rem 5rem;
+    border-bottom: 8px solid #929eb2;
+}
+
+header {
+    height: 15vh;
+}
+
+#hero {
+    height: 85vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    text-align: left;
+}
+
+section>div {
+    text-align: left;
+}
+
+.case-container {
+    align-content: center;
+    align-items: center;
+    display: flex;
+    flex: none;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: 32px;
+    height: min-content;
+    justify-content: flex-start;
+    overflow: hidden;
+    padding: 2.5rem 0;
+    position: relative;
+    width: 100%;
+
+}
+
+div.titleCase-container {
+    align-self: stretch;
+    flex: none;
+    height: auto;
+    position: relative;
+    width: 33%;
+}
+
+.case-container--top h2 {
+    font-size: 50px;
+    /* margin-bottom: 50px; */
+}
+
+.asideCase-container {
+    align-content: flex-start;
+    align-items: flex-start;
+    display: flex;
+    flex: 1 0 0px;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    gap: 20px;
+    height: min-content;
+    justify-content: flex-start;
+    /* padding: 26px 0 0; */
+    position: relative;
+    width: 1px;
+    padding-left: 40px;
+}
+
+.prio {
+    display: flex;
+}
+
+.center {
+    text-align: center;
+}
+
+.maddynessMobilNav {
+    max-width: 70%;
+}
+
+.pad1 {
+    padding: 2.5rem 0;
+}
+
+#FAQCase .case-container--top>*,
+#styleCase .case-container--top>*,
+.subCase>*,
+.left>*,
+.right>* {
+    margin-bottom: 20px;
+}
+
+.subCases {
+    width: 85%;
+}
+
+.left,
+.right {
+    width: 50%;
+}
+
+.bonus {
+    text-align: left;
+}
+
+@media screen and (max-width: 824px) {
+
+    .flex,
+    .case-container {
+        flex-direction: column;
+    }
+
+    section {
+        padding: 3rem 2rem;
+    }
+
+    div.titleCase-container {
+        width: 100%;
+    }
+
+    .asideCase-container {
+        padding-left: 0;
+        width: 100%;
+    }
+
+    .case-container--top h2 {
+        font-size: 2rem;
+    }
+
+    .subCases {
+        width: 100%;
+    }
+
+    .left,
+    .right {
+        width: 100%;
+    }
+}
