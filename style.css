@@ -63,7 +63,7 @@ li {
 }
 
 header {
-    background-color: #111;
+    background-color: #02030b;
     color: #fff;
     margin: auto;
     display: flex;
@@ -74,11 +74,12 @@ header {
 
 
 .hello {
-    transform: rotate(-5deg);
-    font-size: 2.8rem;
+    font-size: 3.8rem;
     margin-bottom: 2.5rem;
     transform-origin: center;
     text-align: left;
+    opacity: .8;
+    font-weight: 500;
 }
 
 .scrollingTxt {
@@ -97,7 +98,6 @@ section {
     height: 100%;
     text-align: center;
     padding: 3rem 5rem;
-    border-bottom: 8px solid #929eb2;
 }
 
 header {
@@ -109,13 +109,25 @@ header {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
-    align-content: center;
+    align-items: flex-start;
+    align-content: flex-start;
     text-align: left;
+    background-color: #111;
+    color: #fff;
 }
 
 section>div {
     text-align: left;
+}
+
+h2 span {
+    background-color: #111;
+    padding: 3px 6px;
+    border-radius: 4px;
+    -webkit-box-decoration-break: clone;
+    box-decoration-break: clone;
+    line-height: 1.7;
+    /* transform: rotate(1deg); */
 }
 
 .case-container {
@@ -132,7 +144,6 @@ section>div {
     padding: 2.5rem 0;
     position: relative;
     width: 100%;
-
 }
 
 div.titleCase-container {
@@ -143,9 +154,22 @@ div.titleCase-container {
     width: 33%;
 }
 
-.case-container--top h2 {
+.case-container--top h2,
+.bonus h2 {
     font-size: 50px;
+
     /* margin-bottom: 50px; */
+}
+
+.case-container--top h2 {
+    color: #fff;
+    transform: rotate(359deg);
+}
+
+.bonus h2 {
+    color: #111;
+    transform: rotate(359deg);
+
 }
 
 .asideCase-container {
@@ -199,7 +223,18 @@ div.titleCase-container {
 
 .bonus {
     text-align: left;
+    background: #111;
+    color: #e7e7e7;
 }
+
+.bonus>* {
+    margin-bottom: 20px;
+}
+
+.bonus h3 {
+    font-size: 26px;
+}
+
 
 @media screen and (max-width: 824px) {
 
@@ -210,6 +245,10 @@ div.titleCase-container {
 
     section {
         padding: 3rem 2rem;
+    }
+
+    .hello {
+        font-size: 1.8;
     }
 
     div.titleCase-container {
@@ -233,4 +272,16 @@ div.titleCase-container {
     .right {
         width: 100%;
     }
+
+    .subCases.pad1 {
+        padding-bottom: 0;
+    }
+}
+
+.row {
+    flex-direction: row;
+}
+
+.bonus h2 span {
+    background-color: #f2f2f2;
 }
